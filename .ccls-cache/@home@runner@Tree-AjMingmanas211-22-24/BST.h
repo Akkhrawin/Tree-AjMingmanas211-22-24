@@ -77,7 +77,7 @@ void BST::printTree(TreeNodePtr treePtr,int l) {
   // TreeNodePtr treePtr=rootPtr;
   if (treePtr) {
     printTree(treePtr->move_right(),l+1);
-    cout<<setw(3*1)<<treePtr->get_value()<<endl;
+    cout<<setw(3*l)<<treePtr->get_value()<<endl;
     printTree(treePtr->move_left(),l+1);
     
   }                                 // end if
